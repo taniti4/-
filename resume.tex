@@ -1,0 +1,46 @@
+\documentclass[chukan]{hitsotsuron} %文書のクラスファイルを指定
+
+%題目の各文字列を指定
+\title{単文統合型作問支援環境「モンサクン」における\\学習者の特徴分析に関する研究}
+
+\papertype{令和3年度卒業研究概要}
+\author{谷口順哉}
+\snumber{BL18064}
+\advisor{松本慎平}
+\date{2021年5月17日}
+
+\begin{document} %文書本体の開始
+
+%題目を実際に作成
+\twocolumn[%
+\maketitle
+]
+
+\if0
+
+Latexの利用に関する参考URL）
+
+LaTeX - コマンド一覧
+http://www1.kiy.jp/~yoka/LaTeX/latex.html
+
+LaTeXコマンドシート一覧
+https://members.tripod.com/e_luw/gakko/latex1/l_list.html
+
+\fi
+
+% 緒言
+\input{intro.tex}
+
+% 関連研究
+\input{2nd.tex}
+
+%実験方法
+\input{3rd.tex}
+
+%結論
+\input{concl.tex}
+
+\bibliographystyle{jplain}    % スタイル(bstファイル名)を記述する．jplain,plainはpLaTeXに標準で付いている．
+%\nocite{*}                 % 本文中で参照していない文献をリストに載せたい場合に用いる．*を指定すると全て載せる．通常使わないのでコメントアウトしている．
+\bibliography{reflist}    % bibファイル名を指定する．拡張子は除く．
+\end{document} 
